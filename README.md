@@ -7,7 +7,7 @@
 
 In this project we make neural network model [(MLPClassifierModel)](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html) to can classifier between    
 
-| index | labe |
+| index | label |
 | --- | --- |
 | 0 | wolf |
 | 1 | elephant |
