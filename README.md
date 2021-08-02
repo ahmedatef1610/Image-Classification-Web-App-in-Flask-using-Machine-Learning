@@ -34,7 +34,7 @@ In this project we make neural network model [(MLPClassifierModel)](https://scik
 
 ---
 
-Model info:
+Model [link](https://github.com/ahmedatef1610/Image-Classification-Web-App-in-Flask-using-Machine-Learning/blob/master/2-dataprepare-ML-pipeline/MLPClassifierModel_model_best.pickle) info:
 
 ![ScreenShot_20210802021923](https://user-images.githubusercontent.com/39852784/127789900-0f7de47d-8ee5-476c-a424-f14ec530b41d.png)
 ![ScreenShot_20210802021904](https://user-images.githubusercontent.com/39852784/127789935-b68c2e50-f741-467d-8470-3f2434923fa5.png)
@@ -70,6 +70,16 @@ Counter({'bear': 101,
 ![output](https://user-images.githubusercontent.com/39852784/127790994-7f834d77-6f2d-490a-aae0-a6570ed46173.png)
 
 ![ScreenShot_20210802023924](https://user-images.githubusercontent.com/39852784/127790569-9cfe1528-5e2b-47c9-97ca-5205ad055096.png)
+
+And we make [data_animals_head_20.pickle](https://github.com/ahmedatef1610/Image-Classification-Web-App-in-Flask-using-Machine-Learning/blob/master/2-dataprepare-ML-pipeline/data_animals_head_20.pickle) contains 
+
+```
+data = dict()
+data['description'] = 'There are 20 classes and 2057 images are there. All the images are 80 x 80 (rgb)'
+data['data'] = img_all_arrs
+data['target'] = labels
+data['labels'] = set(labels)
+```
 
 ---
 
