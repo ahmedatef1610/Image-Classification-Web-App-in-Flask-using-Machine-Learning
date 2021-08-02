@@ -44,6 +44,29 @@ Model info:
 
 Data [link](https://drive.google.com/file/d/1ARuq78xZCFgUgxCjuAdTKxyv96S4-3wP/view?usp=sharing)
 
+img_all_arrs shape => (2057, 80, 80, 3)
+
+Counter({'bear': 101,
+         'cat': 159,
+         'chicken': 100,
+         'cow': 103,
+         'deer': 103,
+         'dog': 132,
+         'duck': 103,
+         'eagle': 100,
+         'elephant': 100,
+         'human': 100,
+         'lion': 102,
+         'monkey': 100,
+         'mouse': 100,
+         'natural': 8,
+         'panda': 118,
+         'pigeon': 115,
+         'rabbit': 100,
+         'sheep': 100,
+         'tiger': 113,
+         'wolf': 100})
+
 ![output](https://user-images.githubusercontent.com/39852784/127790994-7f834d77-6f2d-490a-aae0-a6570ed46173.png)
 
 ![ScreenShot_20210802023924](https://user-images.githubusercontent.com/39852784/127790569-9cfe1528-5e2b-47c9-97ca-5205ad055096.png)
