@@ -1,0 +1,131 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<div class="container py-3 bg-secondary" id="myrow">
+
+    <ul class="nav nav-tabs" id="myTab">
+        <li class="nav-item">
+            <button class="nav-link active" id="upload-image-tab" data-bs-toggle="tab" data-bs-target="#upload-image"
+                type="button">Upload Image</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link " id="labels-tab" data-bs-toggle="tab" data-bs-target="#labels"
+                type="button">labels</button>
+        </li>
+    </ul>
+    <!-- tab panes -->
+    <div class="tab-content py-3" id="myTabContent">
+
+        <div class="tab-pane fade show active" id="upload-image">
+
+            <form class="" action="#" method="POST" enctype="multipart/form-data">
+
+                <div class="mb-3 d-inline-block">
+                    <input type="file" class="form-control" id="inputGroupFile01" name="image_name" required>
+                </div>
+
+                <div class="mb-3">
+                    <input type="submit" value="submit" class="btn btn-primary">
+                </div>
+            </form>
+
+            <div>
+                <strong>Instructions:</strong> <br>
+                Only upload the file with extension ".png", "jpg", ".jpeg"
+            </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="labels">
+            <p>labels can be predicted by model</p>
+            <pre>
+                0 wolf
+                1 elephant
+                2 human
+                3 dog
+                4 cat
+                5 cow
+                6 eagle
+                7 panda
+                8 natural
+                9 deer
+                10 tiger
+                11 rabbit
+                12 sheep
+                13 chicken
+                14 duck
+                15 bear
+                16 monkey
+                17 lion
+                18 mouse
+                19 pigeon
+            </pre>
+        </div>
+    </div>
+
+</div>
+
+
+
+{% if fileupload %}
+<div class="container my-3">
+
+    <div class="row g-3 py-5">
+
+        <div class="col-12 col-lg-8 align-self-center">
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered table-secondary mb-0">
+                    <thead>
+                        <tr>
+                            <th>Label</th>
+                            <th>Confidence Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for name, score in data.items() %}
+                        <tr>
+                            <td>{{ name }}</td>
+                            <td>{{ score }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+            <!-- <img src="/static/upload/{{ image_filename }}" alt="uploaded image" width="300" height="{{ height }}"> -->
+            <img src="/static/upload/{{ image_filename }}" alt="uploaded image" class="d-inline-block img-fluid">
+        </div>
+
+    </div>
+
+</div>
+{% endif %}
+
+{% if extension %}
+<div class="container mt-3">
+    <div class="row">
+        <div class="alert alert-danger">
+            <p>Invalid Extension of the Image </p>
+            <p>Make sure the image extension is of following: ".png", "jpg", ".jpeg"</p>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+<style>
+    ::-webkit-file-upload-button {
+        background: var(--bs-warning) !important;
+        /* color: red !important; */
+    }
+
+    .nav-tabs {
+        border-bottom: 1px solid var(--bs-dark);
+    }
+</style>
+
+
+
+{% endblock %}
