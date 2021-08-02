@@ -56,5 +56,5 @@ we use GridSearchCV to Hyperparameter Tuning
 After that we create web app in Flask by rendering HTML, CSS, Boostrap. Then, we finally deploy web app in [Python Anywhere](https://www.pythonanywhere.com/) which is cloud platform. [(App link)](http://ahmedatef1610.pythonanywhere.com/)
 
 
-
+---
 
