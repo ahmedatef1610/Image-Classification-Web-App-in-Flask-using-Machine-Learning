@@ -30,6 +30,8 @@ In this project we make neural network model [(MLPClassifierModel)](https://scik
 | 18 | mouse |
 | 19 | pigeon |
 
+
+
 ---
 
 Model info:
@@ -40,8 +42,25 @@ Model info:
 
 ---
 
-We use scikit-image Image processing library to apply HOG (Histogram of Oriented Gradients) to make feature descriptor that is often used to extract features from image data and use this feature descriptor in train model and model evaluation : 
+Data [link](https://drive.google.com/file/d/1ARuq78xZCFgUgxCjuAdTKxyv96S4-3wP/view?usp=sharing)
 
+![output](https://user-images.githubusercontent.com/39852784/127790994-7f834d77-6f2d-490a-aae0-a6570ed46173.png)
+
+![ScreenShot_20210802023924](https://user-images.githubusercontent.com/39852784/127790569-9cfe1528-5e2b-47c9-97ca-5205ad055096.png)
+
+---
+
+We use scikit-image Image processing library to apply HOG (Histogram of Oriented Gradients) to make feature descriptor that is often used to extract features from image data and use this feature descriptor in train model 
+
+![ScreenShot_20210802024240](https://user-images.githubusercontent.com/39852784/127790673-d2601854-3a41-4f0c-8845-4478d76f6a85.png)
+
+![output](https://user-images.githubusercontent.com/39852784/127790646-519afcc0-4c6c-4bcd-87ad-dfaff1020d3f.png)
+
+
+---
+
+model evaluation : 
+ 
 ![ScreenShot_20210802021739](https://user-images.githubusercontent.com/39852784/127789875-30d4541b-76cf-4c05-b09c-116cc4506aba.png)
 
 ---
